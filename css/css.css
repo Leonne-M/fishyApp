@@ -29,17 +29,24 @@
             padding: 10px;
             display: flex;
             flex-wrap: wrap;
+            
 
         }
         .displayed-images img{
             height: 150px;
             width:auto;
             display:block;
-            margin:0px
+            margin-left:10px;
+            border-radius:10px 10px 0px 0px;
+
+
         }
         #text-stuff{
             font-weight: bold;
             background-color: aquamarine;
+            padding:5px;
+            border-radius:0px 0px 10px 10px;
+            margin-left:10px;
 
         }
 

@@ -25,5 +25,22 @@
         #searchPlace button:hover{
             background-color:bisque; ;
         }
+        #display-section{
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .displayed-images img{
+            height: 150px;
+            width:auto;
+            display:block;
+            margin:0px
+        }
+        #text-stuff{
+            font-weight: bold;
+            background-color: aquamarine;
+
+        }
 
      

@@ -40,7 +40,37 @@ function getdata() {
     });
   }
 getdata();
- 
+
+
+function search(q){
+  if(q===""|| q===null ||q===undefined){
+    return;
+  }
+  const myHeaders = new Headers();
+  myHeaders.append("X-RapidAPI-Key", "aa1565a7ffmsh4ea9bf84985da6cp1ece19jsnc8a6912cd422");
+  myHeaders.append("Content-Type", "application/json");
+  const requestOptions = {
+  method: "GET",
+  headers: myHeaders,
+  };
+  fetch(`https://fish-species.p.rapidapi.com/fish_api/fish/${q}`,
+  requestOptions
+
+)
+.then(response => response.json())
+.then(function(data){
+  console.log(data);
+  dataplacer(data);
+}
+)
+}
+
+function dataretriever(){
+  let input=document.getElementById("searchInput").value
+  if(input){search(input)
+
+  }
+}
 
   
   
